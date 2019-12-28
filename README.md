@@ -9,8 +9,11 @@ files necessary to boot macOS Catalina on GA-Z170X-UD3
 - GPU: MSI RX 570 8G (MSI Radeon RX 570 ARMOR 8G OC)
 
 ### Usage
+
 HSxx - USB 2.0 Port
+
 SSxx - USB 3.0 Port
+#####NOTE: SSDTs that are pre-generated are specific to the machine that this repo is based on and may not work properly for another machine.
 
 ### Credits
 - [cnrd](https://github.com/cnrd) (original guide)
