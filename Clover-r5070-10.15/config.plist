@@ -48,7 +48,7 @@
 				<key>AddIMEI</key>
 				<false/>
 				<key>AddMCHC</key>
-				<false/>
+				<true/>
 				<key>AddPNLF</key>
 				<false/>
 				<key>DeleteUnused</key>
@@ -72,13 +72,13 @@
 				<key>FixHDA</key>
 				<false/>
 				<key>FixHPET</key>
-				<false/>
+				<true/>
 				<key>FixHeaders</key>
 				<false/>
 				<key>FixIDE</key>
 				<false/>
 				<key>FixIPIC</key>
-				<false/>
+				<true/>
 				<key>FixIntelGfx</key>
 				<false/>
 				<key>FixLAN</key>
@@ -86,7 +86,7 @@
 				<key>FixMutex</key>
 				<false/>
 				<key>FixRTC</key>
-				<false/>
+				<true/>
 				<key>FixRegions</key>
 				<false/>
 				<key>FixS3D</key>
@@ -96,9 +96,9 @@
 				<key>FixSBUS</key>
 				<false/>
 				<key>FixShutdown</key>
-				<false/>
+				<true/>
 				<key>FixTMR</key>
-				<false/>
+				<true/>
 				<key>FixUSB</key>
 				<false/>
 				<key>FixWAK</key>
@@ -115,6 +115,10 @@
 				<key>Signature</key>
 				<string>MATS</string>
 			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>DMAR</string>
+			</dict>
 		</array>
 		<key>HaltEnabler</key>
 		<false/>
@@ -128,13 +132,17 @@
 				<false/>
 				<key>PStates</key>
 				<false/>
+				<key>PluginType</key>
+				<true/>
 			</dict>
 		</dict>
+		<key>FixHeaders</key>
+		<true/>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1</string>
+		<string>dart=0</string>
 		<key>Debug</key>
 		<true/>
 		<key>DefaultVolume</key>
@@ -162,7 +170,7 @@
 			<key>IMEI</key>
 			<string>0x0</string>
 			<key>IntelGFX</key>
-			<string>0x12345678</string>
+			<string>0x0</string>
 			<key>LAN</key>
 			<string>0x0</string>
 			<key>NVidia</key>
@@ -177,12 +185,24 @@
 		<key>USB</key>
 		<dict>
 			<key>FixOwnership</key>
-			<false/>
+			<true/>
 			<key>Inject</key>
 			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
+		<key>Properties</key>
+		<dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AQASGQ==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+			</dict>
+		</dict>
 	</dict>
 	<key>DisableDrivers</key>
 	<array>
@@ -225,7 +245,7 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<true/>
+			<false/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
@@ -275,7 +295,11 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x3</string>
+		<string>0x3E7</string>
+		<key>MLB</key>
+		<string>C02531404GUGPF7JA</string>
+		<key>ROM</key>
+		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -287,7 +311,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 		<key>NvidiaWeb</key>
