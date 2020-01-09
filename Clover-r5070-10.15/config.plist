@@ -144,7 +144,7 @@
 		<key>Arguments</key>
 		<string>dart=0</string>
 		<key>Debug</key>
-		<true/>
+		<false/>
 		<key>DefaultVolume</key>
 		<string></string>
 		<key>Legacy</key>
