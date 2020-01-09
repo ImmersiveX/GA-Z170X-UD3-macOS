@@ -14,6 +14,9 @@ HSxx - USB 2.0 Port
 
 SSxx - USB 3.0 Port
 
+If you are unable to run USB-SSDT.command, try 
+``chmod +x USB-SSDT.command``
+
 **NOTE: SSDTs that are pre-generated are specific to the machine that this repo is based on and may not work properly for another machine.**
 
 ### Credits
