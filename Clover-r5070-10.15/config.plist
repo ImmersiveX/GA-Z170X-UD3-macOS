@@ -146,13 +146,13 @@
 		<key>Debug</key>
 		<true/>
 		<key>DefaultVolume</key>
-		<string>Macintosh HD</string>
+		<string></string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>0</integer>
+		<integer>5</integer>
 		<key>XMPDetection</key>
 		<string>NO</string>
 	</dict>
