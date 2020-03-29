@@ -296,8 +296,6 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x3E7</string>
-		<key>MLB</key>
-		<string>C02531404GUGPF7JA</string>
 		<key>ROM</key>
 		<string>UseMacAddr0</string>
 	</dict>
